@@ -1,0 +1,528 @@
+@font-face{
+	font-family: 'Tolyer';
+	src: url(../font/Tolyer.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'Akrobat';
+	src: url(../font/AkrobatBlack.otf);
+}
+
+@font-face{
+	font-family: 'Cabrion';
+	src: url(../font/cabrion.ttf);
+}
+
+/*arrière plan du fond du site*/
+
+body{
+	background-color:#2B3B3B;
+	margin:0 auto;
+	list-style: none;
+}
+
+/*Barre de navigation*/
+.nav{
+	background-color: #2b2d2a;
+}
+
+/*shinola*/
+.navbar-brand{
+	padding:20px;
+	padding-left:10px;
+	padding-right: 10px;
+	align-self: center;
+}
+
+
+.logo{
+	width:9em;
+}
+
+/*liens principaux blancs*/
+
+ul{
+	margin:0;
+	padding-top:5px;
+	padding-bottom:20px;
+}
+
+
+.nav-link{
+	color:white !important;
+	line-height: 1em;
+}
+
+.nav-link:hover{
+	color : #A0F3F6 !important;
+}
+
+.nav-item{
+	font-family: 'Akrobat';
+	color:white;
+	font-size:1.5em;
+	text-align: center;
+	margin-left:0.7em;
+	margin-right: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+}
+
+li:first-child{
+	margin-left:8%;
+}
+
+li.nav-item:nth-child(2){
+	border-right : 1px solid #373934;;
+	padding-right: 35px;
+}
+
+li.nav-item:nth-child(4){
+	border-left: 1px solid #373934;
+	padding-left: 35px;
+	padding-right:35px;
+}
+
+.plus{
+	margin-right:40px;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+/*texte en gris au dessus*/
+.read{
+	font-family: 'Freemono';
+	font-size:0.5em;
+	font-weight: bold;
+	color: #797c75;
+}
+
+/*réseaux sociaux dans la nav*/
+
+/*images des réseaux*/
+/*section paragraphe newsletter*/
+
+.newsletter{
+	color:white;
+	font-size:0.7em;
+	font-family: "Akrobat";
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 0;
+
+}
+
+.imagesrs{
+	margin-left:60px;
+}
+.rs{
+	height: 0.9em;
+	width: 0.9em;
+	margin-top:20px;
+	display: inline;
+}
+
+/*CAROUSEL*/
+.flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-image:url('../img/fond.jpg');
+	background-size: cover;
+	font-family: 'Cabrion';
+}
+
+.image{
+	width: 82%;
+	border-left: 4px solid white;
+	border-right: 4px solid white;
+}
+
+/*zone de texte du carousel*/
+
+.zonetextcarousel{
+	margin-top:100px;
+	margin-right:45%;
+	text-align: left;
+	width: 30%;
+	color:white;
+	position:absolute;
+}
+
+.description, .textimportant{
+	font-family: 'Akrobat';
+	text-transform: uppercase;
+}
+
+.description{
+	margin-bottom:-35px;
+}
+
+.textimportant{
+	font-size:3em;
+	line-height: 1em;
+}
+
+hr{
+	border: 1px solid grey;
+	margin:10px;
+	margin-top:-40px;
+}
+
+ .learnmore{
+ 	background-image: url(../img/flecheorange.png);
+ 	background-size: 100% 100%;
+ 	background-repeat: no-repeat;
+ 	background-color: transparent;
+ 	border:none;
+ 	text-transform: uppercase;
+ 	padding:0.6em;
+ 	padding-left:1.5em;
+ 	padding-right: 3em;
+ 	font-weight: bold;
+ 	font-size:0.9em;
+ 	color:white;
+ }
+
+/*flèches carousel*/
+
+/*.prev{
+	margin-right:10px;
+	width: 3em;
+	height:7em;
+}
+
+.next{
+	margin-left:10px;
+	width: 3em;
+	height:7em;
+}*/
+
+@media (min-width: 1900px){
+
+	.nav-link{
+		font-size:1.9em;
+	}
+
+	.logo{
+		width:16em;
+	}
+
+
+	.readmore{
+		font-size:1.4em;
+	}
+
+
+	.prev{
+	width: 4em;
+	height:9em;
+}
+
+	.next{
+	width: 4em;
+	height:9em;
+	}
+
+	.textimportant{
+		font-size:4em;
+	}
+
+	.readmore{
+		font-size:1.2em;
+	}
+
+	.learnmore{
+ 	padding:0.7em;
+ 	padding-left:1.3em;
+ 	padding-right: 3.1em;
+ 	font-size:1.8em;
+	}
+
+	.newsletter{
+		margin-bottom: 40px;
+	}
+	.rs{
+	height: 1.2em;
+	width: 1.2em;
+	margin-top:20px;
+	}
+}
+
+@media(max-width: 1900px){
+	.nav-link{
+		font-size:1.9em;
+	}
+
+	.logo{
+		width:16em;
+	}
+
+
+	.readmore{
+		font-size:1.4em;
+	}
+
+	.newsletter{
+		font-size: 0.5em
+		;
+	}
+	.prev{
+	width: 4em;
+	height:9em;
+}
+
+	.next{
+	width: 4em;
+	height:9em;
+	}
+
+	.textimportant{
+		font-size:4em;
+	}
+
+	.readmore{
+		font-size:1.4em;
+	}
+
+	.learnmore{
+ 	padding:0.7em;
+ 	padding-left:1.3em;
+ 	padding-right: 3.1em;
+ 	font-size:1.8em;
+}
+
+}
+
+@media (max-width: 1810px){
+	.nav-link{
+		font-size:1.6em;
+	}
+
+	.logo{
+		width:15em;
+	}
+
+
+	.readmore{
+		font-size:1.4em;
+	}
+
+
+	.prev{
+	width: 4em;
+	height:9em;
+}
+
+	.next{
+	width: 4em;
+	height:9em;
+	}
+
+	.textimportant{
+		font-size:4em;
+	}
+
+	.readmore{
+		font-size:1.4em;
+	}
+
+	.learnmore{
+ 	padding:0.7em;
+ 	padding-left:1.3em;
+ 	padding-right: 3.1em;
+ 	font-size:1.8em;
+}
+}
+
+@media (max-width: 1650px){
+	.nav-link{
+		font-size:1.4em;
+	}
+
+	.logo{
+		width:13em;
+	}
+
+	.plus{
+		margin-left:-40px;
+	}
+}
+
+@media (max-width: 1450px){
+	.nav-link{
+		font-size:1.2em;
+	}
+
+	.logo{
+		width:11em;
+	}
+
+	.readmore{
+		font-size:1em;
+	}
+
+	.textimportant{
+		font-size:2.5em;
+	}
+
+	.learnmore{
+ 	padding:0.6em;
+ 	padding-left:1.5em;
+ 	padding-right: 3em;
+ 	font-size:0.9em;
+	}
+}
+
+@media (max-width: 1320px){
+	.nav-link{
+		font-size:1em;
+	}
+
+	.logo{
+		width:8.5em;
+	}
+
+	.readmore{
+		font-size:0.8em;
+	}
+}
+
+@media(max-width: 1240px){
+	.zonetextcarousel{
+	margin-bottom:-40px;
+	margin-top:30px;
+	}
+
+	.textimportant{
+	font-size:2.5em;
+	}
+
+	.description{
+		margin-bottom: -25px;
+	}
+
+	li:last-child{
+		margin-right:0;
+	}
+
+}
+
+@media (max-width: 1182px){
+
+	.logo{
+		width:7em;
+	}
+
+	.nav-link{
+		font-size:0.8em ;
+	}
+
+	.n{
+		display:none;
+	}
+
+	.readmore{
+		font-size:0.9em;
+	}
+}
+
+@media(max-width: 900px){
+	.nav-link{
+		font-size:0.6em;
+	}
+
+	.textimportant{
+		font-size:1.6em;
+		margin-bottom:2em;
+	}
+
+	.description{
+		margin-bottom: 0;
+	}
+
+	.readmore{
+		display:none;
+	}
+
+	.prev{
+		margin-right:-10px;
+		width: 2em;
+		height:4em;
+	}
+
+	.next{
+		margin-left:-10px;
+		width: 2em;
+		height:4em;
+	}
+}
+
+@media(max-width: 820px){
+	.logo{
+		width:5em;
+	}
+}
+
+@media(max-width: 720px){
+
+	.zonetextcarousel{
+	margin-bottom:-20px;
+}
+
+	.description{
+		font-size:0.7em;
+	}
+
+	.textimportant{
+	font-size:1.4em;
+	}
+
+	.learnmore{
+	font-size:0.6em;
+	}
+}
+
+@media(max-width: 500px){
+	.zonetextcarousel{
+		margin-bottom:40px;
+	}
+	.textimportant{
+		font-size:1em;
+		margin-bottom: 15px;
+	}
+
+	hr{
+		display: none;
+	}
+}
+
+@media(max-width: 420px){
+	.description{
+	display:none;
+	}
+}
+
+@media(max-width: 370px){
+
+	.zonetextcarousel{
+	margin-bottom:-25px;
+	}
+
+	.textimportant{
+	font-size:0.9em;
+	}
+
+	.readmore{
+		display:none;
+	}
+
+	.learnmore{
+	font-size:0.4em;
+	}
+}

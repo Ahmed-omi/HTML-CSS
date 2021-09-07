@@ -1,0 +1,155 @@
+@font-face{
+	font-family: 'Cabrion';
+	src: url(../font/cabrion.ttf);
+}
+
+@font-face{
+	font-family: 'jost';
+	src: url(../font/Jost-400-Book.ttf);
+}
+
+body{
+	background-image: url('../img/fond.jpg');
+	background-size: cover;
+	color:white;
+	font-family: 'Cabrion';
+	font-size:1.6em;
+}
+
+.container{
+	width:650px;
+	float:right;
+	margin-top: 7em;
+	margin-right:5em;
+}
+
+.touchid{
+	margin-top: 15%;
+}
+h1{
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 0.05em;
+}
+
+.itunes{
+	font-family: 'jost';
+	color:grey;
+}
+
+
+hr{
+	border: 1px solid grey;
+}
+.switch{
+	font-weight: bold;
+}
+
+.plus{
+	float:right;
+	position: relative;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+/*SLIDESHOW*/
+
+/* Slideshow container */
+.para-container {
+  position: relative;
+
+}
+
+/* Slides */
+.para {
+  text-align: justify;
+  color:white;
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  position :fixed;
+  width: auto;
+  margin-top: 400px;
+  right:0;
+  margin-left:40%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  position: relative;
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 40px;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.dot:hover, .dot.active {
+  background-color: white;
+}
+
+@media screen and (max-width: 1550px){
+	body{
+		font-size: 1em;
+	}
+
+	.container{
+		width:450px;
+	}
+
+	.dot-container{
+		margin-top:300px;
+	}
+
+	.dot{
+		height:7px;
+		width: 7px;
+		margin-bottom:30px;
+	}
+}
+
+@media screen and (max-width: 550px){
+	body{
+		background-color: #1C1334;
+		background-image: none;
+	}
+	.container{
+	width:330px;
+	margin:0;
+	}
+		.dot-container {
+	  padding: 20px;
+	  position :absolute;
+	  width: 300px;
+	  margin-left:0;
+	  margin-top:400px;
+	}
+
+	.dot {
+		display: inline-block;
+		margin-right:5px;
+		margin-left: 5px;
+	}
+
+}
+
+@media(max-width: 345px){
+	.container{
+		width: 250px;
+	}
+
+	.dot-container{
+		margin-top:500px;
+	}
+}
