@@ -1,0 +1,198 @@
+@font-face
+{
+	font-family:'Jost*';
+	src: url('../font/OpenType/Jost-300-Light.otf') format('otf');
+	src: url('../font/Jost-300-Light.ttf') format('truetype');
+	src: url('../font/OpenType/Jost-400-Book.otf') format('otf');
+	src: url('../font/Jost-400-Book.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: Tabarra;
+	src: url('../font/tabarra/TabarraPro-Black-FFP.ttf') format('truetype');
+}
+
+body{
+	font-family: 'Jost*', sans-serif;
+	margin:0 auto;
+	color:#2A302B;
+}
+
+header{
+	background-color: #3DDA98;
+	color: white;
+	padding-top:2%;
+	padding-bottom:6%;
+	justify-content: center;
+	font-weight: bold;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+}
+
+h1{
+	font-size: 5em;
+	font-weight: bold;
+	font-family: Tabarra, sans-serif;
+	margin:0;
+	padding-bottom: 6%;
+}
+
+hr{
+	color:#3DDA98;
+	width:3em;
+	border:4px solid;
+	margin-left: 0;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+/*cartes*/
+
+.container{
+	
+margin-right:5%;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left:30px;
+	margin-right: 30px;
+	justify-content: center;
+}
+
+.entete{
+	margin:0;
+}
+
+.card{
+	padding:20px;
+	padding-top:1.6em;
+	padding-bottom:2em;
+	margin-top:-6%;
+	background-color: white;
+	width:25%;
+	margin-left:2em;
+	margin-right:2em;
+	border:1px solid #E8E2E2;
+}
+
+.card-body{
+	padding:10px;
+	margin-left:10px;
+}
+
+.card-title{
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.card-text{
+	font-size: 1.3em;
+	color: #2A322E;
+}
+
+/*liste*/
+
+.liste{
+	color: #B7F0CE;
+	margin-right: -3%;
+	margin-left:-1%;
+}
+
+li{
+	margin-right:-3%;
+	margin-left:-3%;
+}
+
+@media screen and (min-width: 1700px){
+	header{
+		padding-top:20px;
+	}
+
+	h1{
+		font-size: 7.5em;
+	}
+
+	hr{
+		border:7px solid;
+		width:4.5em;
+	}
+
+	.card{
+		margin-left:3em;
+		margin-right: 3em;
+	}
+
+	.card-title{
+	font-size: 2.3em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	}
+
+	.card-text{
+	font-size: 1.7em;
+	color: #2A322E;
+	}
+}
+
+@media screen and (max-width: 1165px){
+	.card{
+		margin-top: 5%;
+	}
+
+	.liste{
+		display: none;
+	}
+
+	.entete{
+		margin:0;
+		font-size:0.5em;
+	}
+
+	h1{
+		display: inline;
+	}
+}
+
+
+@media screen and (max-width: 900px){
+li{
+	display:none;
+}
+
+.row{
+	display: block;
+	align-self: center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.card{
+	width:80%;
+	margin-right: 0;
+	margin-left: 2em;
+}
+}
+
+@media screen and (max-width: 550px){
+	.row{
+		margin:0;
+	}
+	.card{
+	width:100%;
+	margin:0;
+	padding:0;
+	}
+
+	.container{
+		margin:0;
+	}
+}
