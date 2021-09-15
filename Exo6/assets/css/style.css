@@ -9,7 +9,7 @@
 }
 
 body{
-	background-image: url('../img/fond.jpg');
+	background-image: url('../img/fond2.jpg');
 	background-size: cover;
 	color:white;
 	font-family: 'Cabrion';
@@ -63,7 +63,7 @@ hr{
 /* Slides */
 .para {
   text-align: justify;
-  color:white;
+  color:grey;
   margin: 20px 0;
   line-height: 30px;
 }

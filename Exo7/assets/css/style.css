@@ -191,7 +191,7 @@ hr{
 
 /*flèches carousel*/
 
-/*.prev{
+.prev{
 	margin-right:10px;
 	width: 3em;
 	height:7em;
@@ -201,7 +201,7 @@ hr{
 	margin-left:10px;
 	width: 3em;
 	height:7em;
-}*/
+}
 
 @media (min-width: 1900px){
 
